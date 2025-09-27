@@ -1,1 +1,67 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
 
+/* Navigation bar */
+nav {
+  background: #222;
+  padding: 1em;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Section formatting */
+section {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+section h1 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.project {
+  background: #f1f1f1;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.project:hover {
+  transform: scale(1.02);
+  background: #e8f5e9;
+}
+.project a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Skills list */
+ul {
+  list-style: square;
+}
+
+/* Contact links */
+#contact a {
+  color: #0077cc;
+}
