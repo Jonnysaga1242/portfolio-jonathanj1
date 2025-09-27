@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Portfolio</title>
+  <title>Jonathan James • Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- uses style.css in the same folder -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation (optional) -->
+  <!-- Navigation -->
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -18,21 +20,57 @@
   <!-- About Me -->
   <section id="about">
     <h1>About Me</h1>
-    <p>Hello! My name is [Your Name]. I’m a Computer Science student interested in AI, FinTech, and software development. I enjoy building projects that combine technology and business.</p>
+    <p>
+      Hi, I’m <strong>Jonathan James</strong> — a USF grad (B.S. Computer Science) and
+      current <strong>M.S. Artificial Intelligence &amp; Business Analytics (FinTech)</strong> student.
+      I enjoy building practical, data-driven solutions: fraud detection, loan risk models,
+      and apps that automate real workflows (like my football league manager).
+    </p>
+    <p class="muted">
+      Interests: Machine Learning, FinTech analytics, databases, clean UI, and turning class projects into real tools.
+    </p>
   </section>
 
   <!-- Projects -->
   <section id="projects">
     <h1>Projects</h1>
-    <div class="project">
-      <h2>Loan Default Prediction Model</h2>
-      <p>A machine learning model built with Python & scikit-learn to predict loan defaults. Achieved 87% accuracy using logistic regression and Random Forest.</p>
-      <a href="https://github.com/yourusername/loan-default">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h2>Football League Management App</h2>
-      <p>A system to manage football teams, fixtures, and standings. Built with Figma prototypes and database design.</p>
-      <a href="https://github.com/yourusername/football-league-app">View on GitHub</a>
+
+    <div class="projects-grid">
+      <div class="project">
+        <h2>Loan Default Prediction Model</h2>
+        <p>
+          Scikit-learn pipeline with engineered financial features. Compared Logistic Regression,
+          Random Forest, and XGBoost; tuned hyperparameters to balance recall/precision for risky borrowers.
+        </p>
+        <a href="https://github.com/yourusername/loan-default" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h2>Credit Card Fraud Detection</h2>
+        <p>
+          Built a fraud classifier on imbalanced transactions.
+          Evaluated with PR curves &amp; ROC-AUC; thresholded for high recall on the minority class.
+        </p>
+        <a href="https://github.com/yourusername/credit-card-fraud" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h2>Energy Star Score — NYC Buildings</h2>
+        <p>
+          Gradient-boosted regression predicting Energy Star scores from LL84 features.
+          Feature engineering, cross-validation, and interpretability (feature importance/LIME).
+        </p>
+        <a href="https://github.com/yourusername/energy-star-nyc" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h2>Football League Management App</h2>
+        <p>
+          Manage teams, fixtures, results, and standings. Started with low-fi Figma flows;
+          planning a simple web prototype with an admin dashboard.
+        </p>
+        <a href="https://github.com/yourusername/football-league-app" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
     </div>
   </section>
 
@@ -40,10 +78,10 @@
   <section id="skills">
     <h1>Skills</h1>
     <ul>
-      <li>Programming: Python, Java, C, C#</li>
-      <li>Data: R, SQL, Pandas, Scikit-Learn</li>
-      <li>Tools: GitHub, Figma, VS Code, Azure</li>
-      <li>Other: Business Analytics, AI/ML, FinTech</li>
+      <li><strong>Programming:</strong> Python, Java, C, C#</li>
+      <li><strong>Data:</strong> R, SQL, Pandas, Scikit-Learn</li>
+      <li><strong>Tools:</strong> GitHub, Figma, VS Code, Azure</li>
+      <li><strong>Focus Areas:</strong> Business Analytics, AI/ML, FinTech</li>
     </ul>
   </section>
 
@@ -51,9 +89,17 @@
   <section id="contact">
     <h1>Contact</h1>
     <p>Email: <a href="mailto:jamesjonathan242@gmail.com">jamesjonathan242@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/jonathan-james242">linkedin.com/in/jonathan-james242</a></p>
-    <p>GitHub: <a href="https://github.com/Jonnysaga1242">github.com/Jonnysaga1242</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/jonathan-james242" target="_blank" rel="noopener">linkedin.com/in/jonathan-james242</a></p>
+    <p>GitHub: <a href="https://github.com/Jonnysaga1242" target="_blank" rel="noopener">github.com/Jonnysaga1242</a></p>
   </section>
 
+  <footer>
+    <p>© <span id="year"></span> Jonathan James • Built for GitHub Pages</p>
+  </footer>
+
+  <script>
+    // small enhancement: current year + smooth anchor focus
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
